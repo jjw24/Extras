@@ -1,0 +1,21 @@
+{
+    "version": "1.9.1",
+    "description": "Quick file search & app launcher for Windows with community-made plugins",
+    "homepage": "https://flowlauncher.com",
+    "license": "MIT",
+    "url": "https://github.com/Flow-Launcher/Flow.Launcher/releases/download/v1.9.1/Flow-Launcher-Setup.exe",
+    "hash": "", // TODO    
+    "installer": {
+        "file": "Flow-Launcher-Setup.exe"
+    },
+    "checkver": {
+        "github": "https://github.com/Flow-Launcher/Flow.Launcher"
+    },
+    "autoupdate": {
+        "url": "https://github.com/Flow-Launcher/Flow.Launcher/releases/download/v$version/Flow-Launcher-Setup.exe",
+        "hash": {
+            "url": "https://github.com/Flow-Launcher/Flow.Launcher/releases/tag/v$version",
+            "regex": ">$sha256<"
+        }
+    }
+}
